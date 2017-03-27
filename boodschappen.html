@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+   <form>
+    Boodschappen :<input type="text" id="input">
+</form>
+
+<button onclick="boodschapen()">Lijst</button>
+<br>
+<ul id="1">
+    <ul>
+
+        <script type="text/javascript">
+            function boodschapen(){
+
+                var str = document.getElementById('input').value;
+                var res = str.replace(/ /g, "<br>"); 
+                document.getElementById("1").innerHTML = res;
+            }
+        </script>
+    </body>
+    </html>
